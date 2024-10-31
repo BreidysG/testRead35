@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Comprensión Lectora</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2 id="titleInit">Test Número 35</Nav></h2>
+        <p id="paragraphInit">
+            Este test busca medir tu velocidad y comprensión
+            lectora.<br>
+            Te recomendamos que lo hagas en un ambiente
+            calmado, sin distracciones y con buena iluminación.<br>
+            Esta lectura la debes hacer basado en las técnicas
+            que ya hayas empezado a usar. En las primeras
+            semanas, no debes preocuparte mucho por la
+            comprensión lectora, ya que ese es un proceso que se
+            va a ir dando paulatinamente.<br>
+            Cuando des clic en INICIAR se te presentará la lectura
+            y el sistema llevará un cronómetro que medirá tu
+            velocidad. Al finalzar de leer todo el texto debes dar
+            clic en el botón TERMINAR.<br>
+        </p>
+        <button id="startButton">Iniciar</button>
+        <div id="textContainer" class="hidden">
+            <p id="textToRead">
+                El loco de la sequía
+                <br><br>
+                Había llegado al pueblo hacía ya varios meses, se instaló solo en un campo dispuesto a sembrar.
+                <br><br>
+                Nadie lo conocía demasiado y no porque el hombre no quisiera, sino porque muchas veces la gente no se toma el tiempo para conocer al otro.
+                <br><br>
+                A todos les parecía un ser extraño, había llegado en la peor época, la sequía se había instalado y parecía no querer irse.
+                <br><br>
+                Todos se preguntaban por qué y para qué sembraba ese desconocido si ya nada crecía.
+                <br><br>
+                Al hombre no le importaba, día a día y a pesar de la falta de lluvia, él sembraba. El resto del pueblo no; esperaba a que el clima mejorase para hacerlo.
+                <br><br>
+                Todos se quejaban, se preocupaban por ese presente adverso y un futuro incierto. Sin embargo, el hombre parecía no temerle al presente, ni al futuro: sembraba y mientras lo hacía entonaba dulces melodías.
+                <br><br>
+                Todos llegaron a creer que estaba loco, que no tenía sentido alguno de la realidad y mientras los comentarios sobre "el loco de la sequía" inundaban el pueblo el hombre cantaba y sembraba.
+                <br><br>
+                Cierto día, un niño cansado de escuchar a sus padres criticar al forastero, decidió ir a hablar con él.
+                <br><br>
+                -Todos dicen que estás loco ¿sabes?-le dijo el niño con la sinceridad e inocencia que solo la niñez permite.
+                <br><br>
+                El hombre lo miró y si bien sabía perfectamente el porqué de su mote, le preguntó:
+                <br><br>
+                -¿Tú sabes por qué?
+                <br><br>
+                -Porque siembras y siembras a pesar de la sequía. Nadie entiende por qué o para qué lo haces si nada crecerá-respondió el pequeño.
+                <br><br>
+                -Yo amo sembrar, es lo que sé hacer, he nacido para eso. Si solo siembro cuando el clima es favorable ¿qué mérito tiene?
+                <br><br>
+                -Que seguro crecerá lo que has sembrado y no perderás tiempo y semillas-respondió el niño con la misma sinceridad que antes.
+                <br><br>
+                -Mira pequeño-dijo el hombre-Yo siempre siembro pues para eso he nacido y si no sembrase no sería yo. Aún sin lluvia yo necesito sembrar porque sé que, a pesar de la falta de agua, algo luego crecerá. Créeme, quienes siembran siempre más allá del clima, más allá de todo son los que hacen la diferencia en este mundo. Yo siembro mis semillas, las del trabajo honrado, las de la esperanza, las del esfuerzo y sé que más allá de todo, algún día ese esfuerzo dará sus frutos.
+                <br><br>
+                Y el niño, en la sabiduría propia de la infancia, entendió que ese hombre de loco no tenía nada o que, en todo caso, era mejor contagiarse de esa "locura" que vivir con la cordura que veía en todos los demás.
+                <br><br>
+                Llegó a su casa, tomó unas cuantas semillas y comenzó a sembrar.
+            </p>
+            
+               
+            <div id="timer">Tiempo transcurrido: <span id="timerValue">0</span> segundos</div>
+            <button id="finishButton">Terminar</button>
+        </div>
+        <div id="questionnaire" class="hidden">
+            <h2>Test de Comprensión Lectora</h2>
+            <form id="quizForm">
+                <ol id="questionList">
+                    <!-- Las preguntas se añadirán aquí dinámicamente con JavaScript -->
+                </ol>
+                <button type="submit">Terminar</button>
+            </form>
+        </div>
+        <div id="results" class="hidden">
+            <h2>Resultados</h2>
+            <div id="wordCount">Palabras leídas: <span id="wordCountValue"></span></div>
+            <div id="readingSpeed">Velocidad de lectura: <span id="readingSpeedValue"></span> palabras por minuto</div>
+            <div id="comprehension">Comprensión lectora: <span id="comprehensionValue"></span>%</div>
+            <div id="timeResult">Tiempo transcurrido: <span id="timeResultValue"></span> segundos</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
